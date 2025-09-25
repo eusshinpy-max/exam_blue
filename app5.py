@@ -33,12 +33,12 @@ def get_product_prices(product_name: str):
 
     try:
         # Query for the latest price
-        latest_price_response = supabase_client.from_('농산물가격').select('평균가격').eq('품목명', product_name).order('일자', desc=True).limit(1).execute()
+        latest_price_response = supabase_client.from_('농산물가격').select('평균가격').eq('품목', product_name).order('일자', desc=True).limit(1).execute()
         latest_price_data = latest_price_response.data
         logging.info(f"Latest price response data: {latest_price_data}")
 
         # Query for the previous day's price
-        previous_day_price_response = supabase_client.from_('농산물가격').select('평균가격').eq('품목명', product_name).eq('일자', yesterday).execute()
+        previous_day_price_response = supabase_client.from_('농산물가격').select('평균가격').eq('품목', product_name).eq('일자', yesterday).execute()
         previous_day_price_data = previous_day_price_response.data
         logging.info(f"Previous day price response data: {previous_day_price_data}")
 
