@@ -10,8 +10,7 @@ logging.basicConfig(level=logging.INFO)
 # Example: SUPABASE_URL: str = "https://your-project-id.supabase.co"
 SUPABASE_URL: str = "https://aiengbpxyemtwxytpuks.supabase.co"
 # Example: SUPABASE_KEY: str = "your-anon-key"
-SUPABASE_KEY: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFpZW5nYnB4eWVtdHd4eXRwdWtzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1ODYyOTEzOSwiZXhw1MjA3NDIwNTEzOX0.EjwOs-4Tuj93_Pq3GCF3UrgO5LElpJXJO5eccUGzRnQ"
-
+SUPABASE_KEY: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFpZW5nYnB4eWVtdHd4eXRwdWtzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1ODYyOTEzOSwiZXhwIjoyMDc0MjA1MTM5fQ.EjwOs-4Tuj93_Pq3GCF3UrgO5LElpJXJO5eccUGzRnQ"
 supabase_client: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 def get_product_prices(product_name: str):
