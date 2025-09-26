@@ -5,6 +5,10 @@ import matplotlib.pyplot as plt
 import matplotlib.font_manager as fm
 import os
 
+# 저장소에 포함된 한글 폰트 로드
+font_path = "./NanumGothic.ttf"  # GitHub repo에 업로드한 폰트 파일
+fontprop = fm.FontProperties(fname=font_path)
+
 # Replace with placeholder values or actual values for testing purposes
 # In a real application, use environment variables or a secure configuration method
 url: str = os.environ.get("SUPABASE_URL", "https://aiengbpxyemtwxytpuks.supabase.co") # Replace with your Supabase URL
