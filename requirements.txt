@@ -2,4 +2,8 @@ streamlit
 pandas
 scikit-learn
 matplotlib
+
 supabase
+
+# 한글 폰트
+fonttools
