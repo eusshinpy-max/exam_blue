@@ -7,8 +7,8 @@ import os
 
 # Replace with placeholder values or actual values for testing purposes
 # In a real application, use environment variables or a secure configuration method
-url: str = os.environ.get("SUPABASE_URL", "YOUR_SUPABASE_URL") # Replace with your Supabase URL
-key: str = os.environ.get("SUPABASE_KEY", "YOUR_SUPABASE_KEY") # Replace with your Supabase Public API Key
+url: str = os.environ.get("SUPABASE_URL", "https://aiengbpxyemtwxytpuks.supabase.co") # Replace with your Supabase URL
+key: str = os.environ.get("SUPABASE_KEY", "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFpZW5nYnB4eWVtdHd4eXRwdWtzIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1ODYyOTEzOSwiZXhwIjoyMDc0MjA1MTM5fQ.EjwOs-4Tuj93_Pq3GCF3UrgO5LElpJXJO5eccUGzRnQ") # Replace with your Supabase Public API Key
 
 if url == "YOUR_SUPABASE_URL" or key == "YOUR_SUPABASE_KEY":
     st.warning("Using placeholder Supabase URL and Key. Please replace with your actual credentials.")
